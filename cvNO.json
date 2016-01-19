@@ -1,0 +1,97 @@
+{
+
+  "language" : "no",
+
+  "thanks": "Tusen takk! Du hører fra meg",
+
+  "description": "23 år ung, familiefar.",
+
+  "error": {
+    "name": "Vennligst oppgi et navn",
+    "email": "Vennligst oppgi en epost adresse",
+    "message": "Vennligst skriv en melding"
+  },
+
+  "navbar" : {
+    "home" : "Hjem",
+    "work" : "Arbeidserfaring",
+    "education" : "Utdanning",
+    "skills" : "Ferdigheter",
+    "contact" : "Kontakt"
+  },
+
+  "work": {
+    "heading": "Arbeidserfaring",
+    "heading2": "Arbeidsoppgaver:",
+    "data": [{
+      "date": "1mnd i 2015",
+      "position": "Utvikler - S Moe AS",
+      "assignments": "Utvikling av et web basert styringssystem for ventilasjonsanlegg"
+    }, {
+      "date": "2014 - 2015",
+      "position": "IKT lærling - EVRY AS",
+      "assignments": "Feilretting av datamaskiner og nettverk, både onsite og i førstelinje support"
+    }, {
+      "date": "2013 - 2014",
+      "position": "IKT lærling - Trondheim Kommune",
+      "assignments": "Utviklet en webside for redigering og presentering av møteromsoversikten i fylkeshuset.<br>Bisto også med implementering av nytt lønnssystem for kommunen. Hadde i ettertid opplæring og support på dette"
+    }, {
+      "date": "2011 - 2013",
+      "position": "Assistent - Åsvang Barneskole (tilkallingsvikar)",
+      "assignments": "Bistand i klasserom og SFO.<br>Jobbet også som rørlegger hos Helgemo Rørteknikk og som lagermedarbeider hos Nortura avd. Leangen i sirka 4 måneder til sammen i denne perioden"
+    }, {
+      "date": "2008 - 2010",
+      "position": "Renholder - Strinda videregående skole",
+      "assignments": "Renhold av klasserom og lignende. 41% stilling"
+    }]
+  },
+  "education": {
+    "heading": "Utdanning",
+    "data": [{
+      "year": "2015 - 2016",
+      "class": "Påbygning til studiespesialisering",
+      "info": "NKI nettstudier - Planen er å fullføre dette studiet ved siden av en jobb"
+    }, {
+      "year": "2012 - 2013",
+      "class": "IKT Servicefaget",
+      "info": "Privatist - Jeg tok dette studiet selvstendig og meldte meg opp til eksamen på privatistweb.net, samtidig som jeg lærte meg selv å programmere og jobbet som assistent ved Åsvang barneskole"
+    }, {
+      "year": "2010 - 2011",
+      "class": "Salg, Service og Sikkerhet",
+      "info": "Strinda videregående"
+    }, {
+      "year": "2009 - 2010",
+      "class": "Service og Samferdsel",
+      "info": "Strinda videregående"
+    }, {
+      "year": "2008 - 2009",
+      "class": "Byggfag",
+      "info": "Brundalen videregående - Rørfag som valgfag"
+    }]
+  },
+  "skills": {
+    "heading": "Ferdigheter",
+    "data": [
+      "Førstelinje support",
+      "Drift av nettverk og windows klienter",
+      "Kursholding",
+      "Utvikling:"
+    ]
+  },
+  "contact" : {
+    "heading" : "Kontakt",
+    "heading2" : "Bruk skjemaet under til å sende meg en melding",
+    "footer" : "Jeg kan også nåes på tlf 916 33 343"
+  },
+  "form" : {
+    "label" : {
+      "name" : "Ditt navn",
+      "email" : "Din epost",
+      "message" : "Melding"
+    },
+    "placeholder" : {
+      "email": "ola.nordmann@eksempel.no",
+      "name" : "Ola Nordmann"
+    }
+  }
+}
