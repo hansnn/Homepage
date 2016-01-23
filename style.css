@@ -18,10 +18,10 @@ body {
 #main-content {
   height: 100%;
 }
-#work .row, #education .row {
+#work .row, #education .row, #projects .row{
   margin-bottom: 20px;
 }
-#work .col-xs-9, #education .col-xs-9 {
+#work .col-xs-9, #education .col-xs-9, #projects .col-xs-9 {
   border: 1px solid #9A9A9A;
 }
 
@@ -53,13 +53,23 @@ body {
 #home .presentation {
   color: #eee;
 }
-.page-section-header, .year, .collapse-btn .glyphicon, h4, .navbar-default .navbar-nav > li > a:hover, form .btn{
+.page-section-header, .year, h4, .navbar-default .navbar-nav > li > a:hover, form .btn{
   color: #fff;
 }
 .progress-bar, form .btn, .year {
   background-color: #149B60;
 }
 
+a.projectUrl {
+  color: #fff;
+  text-decoration: none;
+}
+.projectUrl:hover {
+  color: #149B60;
+}
+.collapse-btn .glyphicon {
+  color: #9A9A9A;
+}
 
 /* ------------ Navbar ------------ */
 .navLinkFocus {

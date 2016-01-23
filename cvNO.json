@@ -4,7 +4,7 @@
 
   "thanks": "Tusen takk! Du hører fra meg",
 
-  "description": "23 år ung, familiefar.",
+  "description": "23 år ung, familiefar, utvikler.",
 
   "error": {
     "name": "Vennligst oppgi et navn",
@@ -15,6 +15,7 @@
   "navbar" : {
     "home" : "Hjem",
     "work" : "Arbeidserfaring",
+    "projects" : "Prosjekter",
     "education" : "Utdanning",
     "skills" : "Ferdigheter",
     "contact" : "Kontakt"
@@ -45,6 +46,23 @@
       "assignments": "Renhold av klasserom og lignende. 41% stilling"
     }]
   },
+  "projects": {
+    "heading": "Prosjekter",
+    "data": [{
+      "url": "Https://github.com/hansnn/MeetingRooms",
+      "description": "En nettside som blir brukt til å vise og oppdatere en møteromsoversikt i fylkeshuset. Jeg lagde siden når jeg var IKT lærling i Trondheim Kommune. Da det var mitt første møte med PHP var det mer som et læringsprosjekt for meg, men siden er fortsatt i bruk i dag."
+      }, {
+      "url": "Https://github.com/hansnn/AnimalSounds",
+      "description": "Et barnespill for android (appen ligger på Play Store)."
+      }, {
+        "url": "Https://github.com/hansnn/raspduino",
+        "description": "To enkle script som åpner for seriell kommunikasjon mellom en Raspberry Pi og en Arduino. Jeg bruker det blant annet til å spille av lyd på en Arduino hver gang noen ser på denne siden (ja, siden er hostet på en Raspberry Pi)."
+      }, {
+        "url": "Https://github.com/hansnn/homepage",
+        "description": "Dette er siden du ser på nå, inkludert bakenden (php). Siden skal videreutvikles til å inneholde flere prosjekter som viser mine ferdigheter."
+      }
+      ]
+  },
   "education": {
     "heading": "Utdanning",
     "data": [{
@@ -72,9 +90,10 @@
   "skills": {
     "heading": "Ferdigheter",
     "data": [
-      "Førstelinje support",
       "Drift av nettverk og windows klienter",
+      "Førstelinje support",
       "Kursholding",
+      "Linux",
       "Utvikling:"
     ]
   },

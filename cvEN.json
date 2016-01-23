@@ -15,6 +15,7 @@
   "navbar" : {
     "home" : "Home",
     "work" : "Work",
+    "projects" : "Projects",
     "education" : "Education",
     "skills" : "Skills",
     "contact" : "Contact"
@@ -45,6 +46,23 @@
       "assignments": "Cleaning of classrooms and hallways. 41% employment"
     }]
   },
+  "projects": {
+    "heading": "Projects",
+    "data": [{
+      "url": "Https://github.com/hansnn/MeetingRooms",
+      "description": "A website that is used to update and showcase an overview of the availability of meeting rooms in the county house in Trondheim. As it was the first time I used PHP it was more of a learning project for me. However the site is still in use today after 2 years."
+      }, {
+      "url": "Https://github.com/hansnn/AnimalSounds",
+      "description": "An Android game for children (available on Play Store)"
+      }, {
+        "url": "Https://github.com/hansnn/raspduino",
+        "description": "Serial communication between Raspberry Pi and Arduino. I use this script to play a sound anytime someone connects to this site (yes, this site is hosted on a Raspberry Pi)."
+      }, {
+        "url": "Https://github.com/hansnn/homepage",
+        "description": "This is the site you're looking at right now. It is supposed to showcase my development skills in different areas. It's under development."
+      }
+      ]
+  },
   "education": {
     "heading": "Education",
     "data": [{
@@ -73,8 +91,8 @@
     "heading": "Skills",
     "data": [
       "Support and operation of networks and Windows clients",
-      "Course holding/teaching",
       "First line support",
+      "Course holding/teaching",
       "Linux",
       "Development:"
     ]

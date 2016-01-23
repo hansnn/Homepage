@@ -16,11 +16,15 @@ $(function() {
     $('[data-id="home"]').css('color', constants.navLinkActiveColor);
   } 
 
-  setLineHeight('work');
-  setLineHeight('education');
-
+  setAllLineHeights();
   bindEventHandlers();
 });
+
+function setAllLineHeights() {
+  setLineHeight('work');
+  setLineHeight('education');
+  setLineHeight('projects');
+}
 
 function bindEventHandlers() {
   bindProgbarAppearEvent();
@@ -30,8 +34,7 @@ function bindEventHandlers() {
   // Make sure the lines that goes through the .collapse-btn elements
     // looks good during window rezising
   $(window).resize(function() {
-    setLineHeight('work');
-    setLineHeight('education');
+    setAllLineHeights();
   });
 
   // .scroll-links are navbar elements.

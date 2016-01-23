@@ -1,20 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
   main();
-
-  function getJson($lang) {
-    if ($lang === 'en') {
-      $filename = 'cvEN.json';
-    } else {
-      $filename = 'cvNO.json';
-    }
-    $json_string = file_get_contents($filename);
-    $json = json_decode($json_string, TRUE);
-    return $json;
-  }
 
   function main() {
 
@@ -28,7 +13,18 @@ error_reporting(E_ALL);
 
     $form = parse_post($json);
 
-    require('cv.php');
+    require('cvLayout.php');
+  }
+
+  function getJson($lang) {
+    if ($lang === 'en') {
+      $filename = 'cvEN.json';
+    } else {
+      $filename = 'cvNO.json';
+    }
+    $json_string = file_get_contents($filename);
+    $json = json_decode($json_string, TRUE);
+    return $json;
   }
 
   function save_form($name, $email, $message) {

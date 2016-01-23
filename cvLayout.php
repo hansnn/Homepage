@@ -73,6 +73,34 @@
       </div> <!-- .col-xs-12 -->
     </div> <!-- #work -->
 
+    <div id="projects" class="row page-section">
+      <div class="col-xs-12">
+        <h2 class="page-section-header"><?php echo $json['projects']['heading'] ?></h2>
+        <?php $i = 0; foreach($json['projects']['data'] as $key=>$project): ?>
+        <div class="row">
+          <div class="col-xs-2">
+          </div>
+          <div class="col-xs-1">
+            <div class="collapse-btn">
+              <span class="glyphicon 
+              <?php if ($i == 0) {echo 'glyphicon-minus';} else {echo 'glyphicon-plus';}?>"></span>
+            </div>
+          </div>
+          <div class="col-xs-9">
+            <h4>
+              <a href="<?php echo $project['url'];?>" class="projectUrl" target="_blank"><?php echo $project['url'];?></a>
+            </h4>
+            <div class="collapse <?php if ($i++ == 0) {echo 'in';}?>">
+              <p>
+                <?php echo $project['description']; ?>
+              </p>
+            </div>
+          </div>
+        </div>
+        <?php endforeach; ?>
+      </div> <!-- .col-xs-12 -->
+    </div> <!-- #projects -->
+
     <div id="education" class="row page-section">
       <div class="col-xs-12">
         <h2 class="page-section-header"><?php echo $json['education']['heading'] ?></h2>
