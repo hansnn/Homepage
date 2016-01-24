@@ -1,5 +1,4 @@
 <?php
-// test
   main();
 
   function main() {
