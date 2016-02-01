@@ -1,0 +1,227 @@
+html, body {
+  height: 100%;
+}
+body {
+  padding-top: 50px;
+  position: relative;
+  font-family: "Calibri";
+}
+.year {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  border-radius: 3px;
+}
+
+#main-content {
+  height: 100%;
+}
+#work .row, #education .row, #projects .row{
+  margin-bottom: 20px;
+}
+#work .col-xs-9, #education .col-xs-9, #projects .col-xs-9 {
+  border: 1px solid #9A9A9A;
+}
+
+#language {
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+#languageBtn {
+  position: relative;
+  top: -50px;
+}
+#languageBtn:hover {
+
+}
+
+
+/* ------------ Colors ------------ */ 
+body {
+  background-color: #171717;
+}
+.navbar-default {
+  background-color: #171717;
+  border-color: #282428;
+}
+.navbar-default .navbar-nav li a, p, strong, span, form label{
+  color: #9A9A9A;
+}
+#home .presentation {
+  color: #eee;
+}
+.page-section-header, .year, h4, .navbar-default .navbar-nav > li > a:hover, form .btn{
+  color: #fff;
+}
+.progress-bar, form .btn, .year {
+  background-color: #149B60;
+}
+
+a.projectUrl {
+  color: #fff;
+  text-decoration: none;
+}
+.projectUrl:hover {
+  color: #149B60;
+}
+.collapse-btn .glyphicon {
+  color: #9A9A9A;
+}
+
+/* ------------ Navbar ------------ */
+.navLinkFocus {
+  color: #149B60;
+}
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav > li  > a, .navbar-default .navbar-header a {
+  transition: color 0.2s;
+}
+
+/* ------------ Page-section ------------ */
+.page-section-footer, .page-section-intro {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+}
+.page-section-intro {
+  margin-bottom: 75px;
+  margin-top: -30px;
+}
+.page-section {
+  width: 100%;
+  padding: 50px 0;
+  max-width: 980px;
+  float: none;
+  margin: auto;
+}
+
+.page-section-header {
+  margin-bottom: 75px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+/* ------------ Home ------------ */
+#home {
+  height: 100%;
+}
+#home .presentation {
+  padding-top: 150px;
+}
+
+
+/* ------------ skills ------------ */
+#skills .progbar {
+  text-align: center;
+  position: relative;
+  line-height: 1.2;
+  min-height: 100px;
+}
+#skills #backend {
+  float: left;
+}
+#skills #frontend {
+  float: right;
+}
+#skills .progbar strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+}
+#skills .progbar i {
+  font-size: 0.6em;
+  font-weight: normal;
+}
+#skills .progbar span {
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+}
+
+/* ------------ Collapse-btn ------------ */
+.collapse-btn:hover {
+  cursor: pointer;
+}
+.collapse-btn {
+  text-align: center;
+  background-color: #2f2f2f;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 3px;
+}
+.collapse-btn span {
+  line-height: 40px;
+  color: #fff;
+  font-size: 1.2em;
+}
+.row:nth-child(2) .collapse-btn:after {
+  /*  Create a vertical line through all .collapse-btns in a section */
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px dashed #999;
+  /* Height is dynamically set using jQuery */
+}
+
+/* ------------ contact ------------ */
+#contact {
+  margin-top: 100px;
+}
+#contact small {
+  font-size: 0.5em;
+}
+
+/* ------------ Media ------------ */
+@media(max-width: 770px) {
+  #work .collapse, #education .collapse {
+    display: block;
+    height: auto !important;
+  }
+  .collapse-btn {
+    display: none;
+  }
+}
+@media(max-width: 600px) {
+    .year {
+    margin: 0 auto -20px;
+    position: relative;
+    z-index: 1;
+  }
+  #work .col-xs-9, #education .col-xs-9 {
+    float: none;
+    margin: auto;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  } 
+  #work .col-xs-2, #education .col-xs-2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #skills .col-xs-4 {
+    float: none;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
