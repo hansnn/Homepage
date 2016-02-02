@@ -58,8 +58,13 @@
         "url": "Https://github.com/hansnn/raspduino",
         "description": "To enkle script som åpner for seriell kommunikasjon mellom en Raspberry Pi og en Arduino. Jeg bruker det blant annet til å spille av lyd på en Arduino hver gang noen ser på denne siden (ja, siden er hostet på en Raspberry Pi)."
       }, {
+<<<<<<< HEAD
         "url": "Https://github.com/hansnn/homepage",
         "description": "Dette er siden du ser på nå, inkludert bakenden (php). Den er stadig under utvikling."
+=======
+        "url": "Https://github.com/hansnn/resume",
+        "description": "Dette er siden du ser på nå, inkludert bakenden (php)."
+>>>>>>> origin/development
       }
       ]
   },
