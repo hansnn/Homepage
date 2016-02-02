@@ -1,8 +1,8 @@
 <?php
   main();
 
-  function main() {
-
+  function main() 
+  {
     if (isset($_GET['lang']) && $_GET['lang'] == 'en') {
       $lang = 'en';
     } else {
@@ -16,7 +16,8 @@
     require('cvLayout.php');
   }
 
-  function getJson($lang) {
+  function getJson($lang) 
+  {
     if ($lang === 'en') {
       $filename = 'cvEN.json';
     } else {
@@ -27,7 +28,8 @@
     return $json;
   }
 
-  function save_form($name, $email, $message) {
+  function save_form($name, $email, $message) 
+  {
     $from = 'CVen din';
     $to ='martinmoeh@gmail.com';
     $body = "Senders navn: $name\n Senders epost: $email\n Melding:\n $message";
@@ -37,7 +39,8 @@
     fclose($f);
   }
 
-  function parse_post($json) {
+  function parse_post($json) 
+  {
     if (isset($_POST['submit'])) {
       echo "<p id='form-submitted' style='display:none'></p>";
 
