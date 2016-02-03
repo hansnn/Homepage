@@ -1,15 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-  main();
-  function main() 
-  {
-    if (isset($_GET['lang']) && $_GET['lang'] == 'en') {
-      $lang = 'en';
-    } else {
-      $lang = 'no';
-    }
-=======
 main();
 function main() 
 {
@@ -20,7 +10,6 @@ function main()
   }
 
   $json = getJson($lang);
->>>>>>> development
 
 
   $form = parse_post($json);
