@@ -58,13 +58,8 @@
         "url": "Https://github.com/hansnn/raspduino",
         "description": "Serial communication between Raspberry Pi and Arduino. I use this script to play a sound anytime someone connects to this site (yes, this site is hosted on a Raspberry Pi)."
       }, {
-<<<<<<< HEAD
-        "url": "Https://github.com/hansnn/homepage",
-        "description": "This is the site you're looking at right now. It is continually under development."
-=======
         "url": "Https://github.com/hansnn/resume",
         "description": "This is the site you're looking at right now."
->>>>>>> origin/development
       }
       ]
   },
