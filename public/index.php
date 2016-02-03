@@ -53,7 +53,7 @@ function parsePost($json)
 {
   $parsedArray = [];
 
-  // If form is submitted through webpage:
+  // If form is submitted through website:
     // $formSuccess will be true untill proven otherwise
   $formSuccess = isset($_POST['submit']);
 
@@ -63,7 +63,7 @@ function parsePost($json)
       echo "<p id='form-submitted' style='display:none'></p>";
     } 
     else {
-      // If field is empty ('') and form is indeed submitted
+      // If field is empty ('') and form is indeed submitted through website
       if ($value == '' && isset($_POST['submit'])) {
         $formSuccess = false;
         $errorMsg = isset($json['error'][$key]) ? $json['error'][$key] : '';
