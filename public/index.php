@@ -1,4 +1,5 @@
 <?php
+
   main();
 
   function main() 
@@ -32,7 +33,8 @@
   {
     $from = 'CVen din';
     $to ='martinmoeh@gmail.com';
-    $body = "Senders navn: $name\n Senders epost: $email\n Melding:\n $message";
+    $body = sprintf("Senders navn: %s\n Senders epost: %s\n Melding:\n %s",
+      $name, $email, $message);
 
     $f = fopen('/mnt/cvkontakt/' . $name . date('Y-m-d_H-i-s') . '.txt', 'w');
     fwrite($f, $body);
