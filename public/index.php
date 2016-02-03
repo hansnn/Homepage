@@ -1,7 +1,6 @@
 <?php
 
   main();
-
   function main() 
   {
     if (isset($_GET['lang']) && $_GET['lang'] == 'en') {
