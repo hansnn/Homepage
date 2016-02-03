@@ -165,7 +165,7 @@
               <div class="col-sm-9">
                 <input type="text" class="form-control" id="name" name="name" 
                 placeholder="<?php echo $json['form']['placeholder']['name']; ?>" value="<?php echo $form['name'] ?>">
-                  <?php echo "<p class='text-danger'>" . $form['errName'] . "</p>";?>
+                  <?php echo "<p class='text-danger'>" . $form['nameErr'] . "</p>";?>
                </div>
             </div>
 
@@ -174,7 +174,7 @@
               <div class="col-sm-9">
                 <input type="email" class="form-control" id="email" name="email" 
                 placeholder="<?php echo $json['form']['placeholder']['email']; ?>" value="<?php echo $form['email'] ?>">
-                 <?php echo "<p class='text-danger'>" . $form['errEmail'] . "</p>"?>
+                 <?php echo "<p class='text-danger'>" . $form['emailErr'] . "</p>"?>
                </div>
             </div>
 
@@ -182,7 +182,7 @@
               <label for="melding" class="col-sm-2 control-label"><?php echo $json['form']['label']['message']; ?></label>
               <div class="col-sm-9">
                 <textarea name="message" rows="4" class="form-control"><?php echo $form['message'];?></textarea>
-                 <?php echo "<p class='text-danger'>" . $form['errMessage'] . "</p>";?>
+                 <?php echo "<p class='text-danger'>" . $form['messageErr'] . "</p>";?>
                </div>
             </div>
 
@@ -196,7 +196,7 @@
             <div class="form-group">
               <div class="col-sm-9 col-sm-offset-2">
                 <!-- Display success/error message after form submit -->
-                <?php echo $form['result'];?>
+                <p id="result"><?php echo $form['result'];?></p>
               </div>
             </div>
           </form>
