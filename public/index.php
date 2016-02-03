@@ -11,8 +11,16 @@ function main()
 
   $json = getJson($lang);
 
+  $form = parsePost($json);
 
-  $form = parse_post($json);
+  if (strlen($form['result']) > 0) {
+    // If all fields in $_POST were valid
+    saveForm(
+      $form['name'],
+      $form['email'],
+      $form['message']
+    );
+  }
 
   require('cvLayout.php');
 }
@@ -29,7 +37,7 @@ function getJson($lang)
   return $json;
 }
 
-function save_form($name, $email, $message) 
+function saveForm($name, $email, $message) 
 {
   $from = 'CVen din';
   $to ='martinmoeh@gmail.com';
@@ -41,7 +49,7 @@ function save_form($name, $email, $message)
   fclose($f);
 }
 
-function parse_post($json) 
+function parsePost($json)
 {
   $parsedArray = [];
   $formSuccess = true; // Form is successfully parsed until proven otherwise
@@ -52,6 +60,7 @@ function parse_post($json)
       echo "<p id='form-submitted' style='display:none'></p>";
     } 
     else {
+      // If field is empty ('') and form is indeed submitted
       if ($value == '' && isset($_POST['submit'])) {
         $formSuccess = false;
         $errorMsg = isset($json['error'][$key]) ? $json['error'][$key] : '';
@@ -63,5 +72,7 @@ function parse_post($json)
       $parsedArray[$key.'Err'] = $errorMsg;
     }
   }
+
+  $parsedArray['result'] = $formSuccess ? $json['thanks'] : '';
   return $parsedArray;
 }
