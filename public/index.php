@@ -52,7 +52,10 @@ function saveForm($name, $email, $message)
 function parsePost($json)
 {
   $parsedArray = [];
-  $formSuccess = true; // Form is successfully parsed until proven otherwise
+
+  // If form is submitted through webpage:
+    // $formSuccess will be true untill proven otherwise
+  $formSuccess = isset($_POST['submit']);
 
   foreach($_POST as $key => $value) {
     // If form is submitted
