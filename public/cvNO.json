@@ -24,8 +24,9 @@
   "work": {
     "heading": "Arbeidserfaring",
     "heading2": "Arbeidsoppgaver:",
-    "data": [{
-      "date": "1mnd i 2015",
+    "data": [
+    {
+      "date": "2015",
       "position": "Utvikler - S Moe AS",
       "assignments": "Utvikling av et web basert styringssystem for ventilasjonsanlegg"
     }, {
