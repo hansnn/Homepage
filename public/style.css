@@ -195,7 +195,7 @@ a.projectUrl {
 
 /* ------------ Media ------------ */
 @media(max-width: 770px) {
-  #work .collapse, #education .collapse {
+  #work .collapse, #education .collapse, #projects .collapse {
     display: block;
     height: auto !important;
   }
@@ -209,14 +209,14 @@ a.projectUrl {
     position: relative;
     z-index: 1;
   }
-  #work .col-xs-9, #education .col-xs-9 {
+  #work .col-xs-9, #education .col-xs-9, #projects .col-xs-9 {
     float: none;
     margin: auto;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 10px;
   } 
-  #work .col-xs-2, #education .col-xs-2 {
+  #work .col-xs-2, #education .col-xs-2, #projects .col-xs-9 {
     float: none;
     width: 100%;
     text-align: center;
